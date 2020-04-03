@@ -1,6 +1,6 @@
-# README
+# Rails API
 
-This project is a simple kittens API built with rails, working with RESTful controller that renders data. It is possible to test the app on the browser as a  normal website, and to test as Api you should use the IRB in the console, we will give some testing explanations below. 
+This project is a simple kittens API built with rails, working with RESTful controller that renders data. It is possible to test the app on the browser as a  normal website, and to test as API you should use the IRB in the console, we will give some testing explanations below. 
 
 
 ## Built With
