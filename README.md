@@ -1,5 +1,6 @@
 # README
->This project is a simple kittens API built with rails, working with RESTful controller that renders data. It is possible to test the app on the browser as a  normal website, and to test as Api you should use the IRB in the console, we will give some testing explanations below. 
+
+This project is a simple kittens API built with rails, working with RESTful controller that renders data. It is possible to test the app on the browser as a  normal website, and to test as Api you should use the IRB in the console, we will give some testing explanations below. 
 
 
 ## Built With
@@ -9,11 +10,8 @@
  ```bash
    Ruby on Rails 5.2.0
  ```
-  ```bash
-   Html5
- ```
-  ```bash
-  PostgresSQL
+ ```bash
+  PostgresSQL 12.1
   ```
 
 ## Setup
@@ -25,7 +23,7 @@ In the command line follow the commands:
 
 - Simply run server with: $rails server or rails s
 
-- go to the browser and run: http://localhost:3000/
+- Go to the browser and run: http://localhost:3000/
 
 - Register some new kittens
 
@@ -33,15 +31,24 @@ In the command line follow the commands:
 Run the following commands:
 
 - Make sure the server is running on a console window
-- on a different console window run $ IRB
-- type: require 'rest-client'
-- you will get a 'true' message 
-- run: r = RestClient.get("http://localhost:3000/kittens", :accept => :json)
-- you will get a RestClient::Responde 200
-- run: puts r.body
-- you will get the JSON string with all kittens saved on the database
-- to request the first kitten saved run: r = RestClient.get("http://localhost:3000/kittens/1", :accept => :json)
-- run: puts r.body
+
+- On a different console window run $ IRB
+
+- Type: require 'rest-client'
+
+- You will get a 'true' message 
+
+- Run: r = RestClient.get("http://localhost:3000/kittens", :accept => :json)
+
+- You will get a RestClient::Responde 200
+
+- Run: puts r.body
+
+- You will get the JSON string with all kittens saved on the database
+
+- To request the first kitten saved run: r = RestClient.get("http://localhost:3000/kittens/1", :accept => :json)
+
+- Run: puts r.body
 
 
 ## Author:
